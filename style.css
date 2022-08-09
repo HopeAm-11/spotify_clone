@@ -4,15 +4,17 @@
 :root {
     --grid_test_c1: orange;
     --grid_test_c2: rgb(116, 116, 116);
-    /* --aside_bg: #000000;
+    --aside_bg: #000000;
     --header_bg: #101010;
-    --main_bg: #101010; */
-
+    --head_btn_login_bg: #fff;
+    --main_bg: #1d1d1d;
+    --head_s: 1rem;
 }
 
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    color: white;
 }
 
 body {
@@ -40,12 +42,13 @@ body {
     grid-column: 1/ span 12;
 } */
 .grid_main_container>* {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 
 .head {
     background-color: var(--header_bg);
+    border: 1px solid orange;
     grid-area: head;
     /* grid-column: 3/ -1;
     grid-row: 1/span 1; */
@@ -70,7 +73,7 @@ body {
 
 .head_left_wrapper,
 .head_right_wrapper {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100px;
     height: 100%;
     display: -webkit-box;
@@ -92,6 +95,32 @@ body {
 .head>* {
     color: white;
 }
+
+/*sign up and sign in button styles*/
+
+.head_signup {
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: var(--head_s)
+}
+
+.head_signup:hover,
+.head_login:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.head_login {
+    color: #000;
+    border: none;
+    font-size: var(--head_s);
+    background-color: var(--head_btn_login_bg);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+}
+
 
 .fa-spotify {
     color: white;
