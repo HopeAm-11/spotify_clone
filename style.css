@@ -194,7 +194,7 @@ body {
 
 
 .foot {
-    background-color: var(--grid_test_c2);
+    /* background-color: var(--grid_test_c2); */
     grid-area: foot;
     /* grid-column: 1/ -1;
     grid-row: 12/-1; */
@@ -202,6 +202,7 @@ body {
     height: 4em;
     position: fixed;
     width: 100vw;
+
 }
 
 .flex {
