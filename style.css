@@ -29,7 +29,7 @@ body {
     grid-template-rows: repeat(12, 1fr);
     width: 100vw;*/
     grid-template-columns: 0.4fr repeat(3, 1fr);
-    grid-template-rows: 80px 1fr 2fr 0.1fr;
+    grid-template-rows: 80px 1fr 2fr 70px;
     /* height: 100vh; */
     grid-template-areas:
         "aside head head head"
@@ -314,12 +314,74 @@ body {
     grid-area: foot;
     /* grid-column: 1/ -1;
     grid-row: 12/-1; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
     bottom: 0;
-    height: 4em;
-    position: fixed;
-    width: 100vw;
+    /* height: 4em; */
+    position: -webkit-sticky;
+    position: sticky;
+    /* width: 100vw; */
+    background: rgb(174, 42, 151);
+    background: -o-linear-gradient(left, rgba(174, 42, 151, 1) 0%, rgba(117, 110, 208, 1) 49%, rgba(81, 154, 244, 1) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(174, 42, 151, 1)), color-stop(49%, rgba(117, 110, 208, 1)), to(rgba(81, 154, 244, 1)));
+    background: linear-gradient(90deg, rgba(174, 42, 151, 1) 0%, rgba(117, 110, 208, 1) 49%, rgba(81, 154, 244, 1) 100%);
 
 }
+
+.foot>* {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.foot_btn:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+.foot_btn {
+    color: #000;
+    border: none;
+    /* font-size: var(--head_s); */
+    background-color: var(--head_btn_login_bg);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-weight: bold;
+    width: 10rem;
+
+}
+
 
 .flex {
     display: -webkit-box;
