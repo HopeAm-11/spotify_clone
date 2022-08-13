@@ -5,9 +5,10 @@
     --grid_test_c1: orange;
     --grid_test_c2: rgb(116, 116, 116);
     --aside_bg: #000000;
-    --header_bg: #101010;
+    --header_bg: hsla(0, 0%, 0%, 0.79);
     --head_btn_login_bg: #fff;
     --main_bg: #1d1d1d;
+    --angle_icon_bg: #161616;
     --head_s: 1rem;
 }
 
@@ -23,7 +24,6 @@ body {
 
 .grid_main_container {
     display: grid;
-    border: 3px solid green;
     /*used for more complex websites */
     /* grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
@@ -47,8 +47,10 @@ body {
 
 
 .head {
+
+    background-color: #1d1d1d;
+    /*fallback color*/
     background-color: var(--header_bg);
-    border: 1px solid orange;
     grid-area: head;
     /* grid-column: 3/ -1;
     grid-row: 1/span 1; */
@@ -74,7 +76,7 @@ body {
 .head_left_wrapper,
 .head_right_wrapper {
     /* border: 1px solid red; */
-    width: 100px;
+    width: 120px;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -86,7 +88,22 @@ body {
     -ms-flex-align: center;
     align-items: center;
 
+
 }
+
+.fa-angle-left,
+.fa-angle-right {
+    background-color: #161616;
+    background-color: var(--angle_icon_bg);
+    color: #979797;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    /* font-weight: thin; need front awesome pro*/
+
+}
+
+
 
 .head_right_wrapper {
     width: 200px;
@@ -94,15 +111,18 @@ body {
 
 .head>* {
     color: white;
+
 }
 
 /*sign up and sign in button styles*/
 
 .head_signup {
     border: none;
-    color: white;
+    color: rgb(173, 173, 173);
     background-color: transparent;
-    font-size: var(--head_s)
+    font-size: var(--head_s);
+    font-weight: bold;
+
 }
 
 .head_signup:hover,
@@ -119,6 +139,7 @@ body {
     background-color: var(--head_btn_login_bg);
     padding: 1rem 2rem;
     border-radius: 25px;
+    font-weight: bold;
 }
 
 
