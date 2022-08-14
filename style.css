@@ -18,6 +18,7 @@
     color: white;
 }
 
+
 body {
     background-color: rgb(143, 143, 143);
 }
@@ -294,19 +295,69 @@ body {
     margin-bottom: 20px;
 
 
-
 }
 
 .card_container {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: minmax(300px, auto);
-
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-auto-rows: minmax(250px, auto);
 }
 
 .card_container>* {
     border: 1px solid pink;
+}
+
+.card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+/*image section*/
+.img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 2px solid rgb(19, 238, 56);
+    /* width: 90%; */
+    height: auto;
+}
+
+.responsive_img {
+    width: 90%;
+}
+
+p,
+h2 {
+    border: 1px solid pink;
+}
+
+.card_text {
+    display: grid;
+
+    height: 30%;
+    width: 90%;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+
+}
+
+.card>* {
+    /* border: 1px solid red; */
 }
 
 .foot {
@@ -332,7 +383,6 @@ body {
     background: -o-linear-gradient(left, rgba(174, 42, 151, 1) 0%, rgba(117, 110, 208, 1) 49%, rgba(81, 154, 244, 1) 100%);
     background: -webkit-gradient(linear, left top, right top, from(rgba(174, 42, 151, 1)), color-stop(49%, rgba(117, 110, 208, 1)), to(rgba(81, 154, 244, 1)));
     background: linear-gradient(90deg, rgba(174, 42, 151, 1) 0%, rgba(117, 110, 208, 1) 49%, rgba(81, 154, 244, 1) 100%);
-
 }
 
 .foot>* {
@@ -345,6 +395,7 @@ body {
     align-items: center;
     margin-left: 20px;
     margin-right: 20px;
+
 }
 
 .footer_left {
@@ -360,7 +411,18 @@ body {
     align-items: flex-start;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+    /* overflow: hidden;
+    -o-text-overflow: ellipses;
+    text-overflow: ellipses;
+    max-width: 60rem; */
+    /*important*/
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
 }
+
+
 
 .foot_btn:hover {
     -webkit-transform: scale(1.1);
