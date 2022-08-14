@@ -7,7 +7,7 @@
     --aside_bg: #000000;
     --header_bg: hsla(0, 0%, 0%, 0.79);
     --head_btn_login_bg: #fff;
-    --main_bg: #1d1d1d;
+    --main_bg: linear-gradient(0deg, rgba(17, 17, 17, 1) 0%, rgba(23, 23, 23, 1) 67%, rgba(61, 61, 61, 1) 100%);
     --angle_icon_bg: #161616;
     --head_s: 1rem;
 }
@@ -20,7 +20,11 @@
 
 
 body {
-    background-color: rgb(143, 143, 143);
+    /* background-color: rgb(143, 143, 143); */
+    background: rgb(17, 17, 17);
+    background: -o-linear-gradient(bottom, rgba(17, 17, 17, 1) 0%, rgba(18, 18, 18, 1) 67%, rgba(30, 30, 30, 1) 88%, rgba(20, 20, 20, 1) 100%);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(17, 17, 17, 1)), color-stop(67%, rgba(18, 18, 18, 1)), color-stop(88%, rgba(30, 30, 30, 1)), to(rgba(20, 20, 20, 1)));
+    background: linear-gradient(0deg, rgba(17, 17, 17, 1) 0%, rgba(18, 18, 18, 1) 67%, rgba(30, 30, 30, 1) 88%, rgba(20, 20, 20, 1) 100%);
 }
 
 .grid_main_container {
@@ -234,7 +238,8 @@ body {
 }
 
 .main {
-    /* background-color: var(--main_bg); */
+    background-color: var(--main_bg);
+
     grid-area: main;
     /* grid-column: 3/ -1;
     grid-row: 2/-1; */
@@ -274,7 +279,7 @@ body {
 }
 
 .cards {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     /* padding: 2rem;
     margin: 1rem; */
     display: -webkit-box;
@@ -291,7 +296,7 @@ body {
 }
 
 .cards>* {
-    border: 1px solid rgb(28, 0, 184);
+    /* border: 1px solid rgb(28, 0, 184); */
     margin-bottom: 20px;
 
 
@@ -300,12 +305,13 @@ body {
 .card_container {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: minmax(250px, auto);
+
 }
 
 .card_container>* {
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
 }
 
 .card {
@@ -322,6 +328,18 @@ body {
     -ms-flex-align: center;
     align-items: center;
     /* border: 1px solid black; */
+    /* border: 1px solid red; */
+    background-color: #1a1a1a;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 10px;
+
+}
+
+.card:hover {
+    background-color: #292929;
+
 }
 
 /*image section*/
@@ -332,13 +350,18 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    border: 2px solid rgb(19, 238, 56);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* border: 2px solid rgb(19, 238, 56); */
     /* width: 90%; */
-    height: auto;
+    /* height: 300px; */
 }
 
 .responsive_img {
     width: 90%;
+    height: 90%;
+
 }
 
 p,
