@@ -27,6 +27,8 @@ body {
     background: linear-gradient(0deg, rgba(17, 17, 17, 1) 0%, rgba(18, 18, 18, 1) 67%, rgba(30, 30, 30, 1) 88%, rgba(20, 20, 20, 1) 100%);
 }
 
+
+
 .grid_main_container {
     display: grid;
     /*used for more complex websites */
@@ -152,6 +154,7 @@ body {
     color: white;
 }
 
+/*-------side-------*/
 .aside {
     background-color: var(--aside_bg);
     grid-area: aside;
@@ -165,8 +168,17 @@ body {
 
 }
 
+.links-side-nav>* {
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
 .aside_flex {
-    border: 1px solid green;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -186,7 +198,7 @@ body {
 .aside_flex>* {
     height: 40%;
     width: 90%;
-    border: 1px solid blue;
+
 }
 
 .aside_nav_flex {
@@ -203,13 +215,30 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border: 2px solid pink;
+}
+
+a>i,
+svg {
+    display: inline-block;
+    margin-right: 0.5em;
+    /* line-height: 24px; */
 }
 
 
+.si {
+    font-size: 1.5em;
+
+}
+
+/* .logo>img {
+    max-width: 8.5rem;
+    /* max-height: 8rem; */
+
+.spotify-logo--text {
+    width: 8rem;
+}
 
 .aside_nav_flex>* {
-    border: 1px solid orange;
     height: 40%;
     width: 100%;
     display: -webkit-box;
@@ -248,7 +277,6 @@ body {
 }
 
 .grid_item_main_3 {
-    border: 2px solid red;
     display: grid;
     -ms-flex-pack: distribute;
     justify-content: space-around;
