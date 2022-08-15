@@ -29,6 +29,15 @@
 
 }
 
+/* 
+@media(max-width:40em) {
+    :root {
+        --fs-xl: 5rem;
+        --fs-600: 1.5rem;
+        --fs-500: 1.2rem;
+        --fs-400: 0.90rem;
+    }
+} */
 
 body {
     /* background-color: rgb(143, 143, 143); */
@@ -237,6 +246,8 @@ body {
 
 }
 
+
+
 .aside_nav_flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -302,6 +313,12 @@ svg {
     height: 7%;
 }
 
+.aside_footer>a:hover {
+    color: rgb(173, 173, 173);
+    text-decoration: underline;
+
+}
+
 .main {
     background-color: var(--main_bg);
 
@@ -342,6 +359,18 @@ svg {
     justify-content: space-between;
 
 }
+
+.flex-between>a:last-child {
+    font-size: var(--fs-400);
+    color: rgb(173, 173, 173);
+
+}
+
+.flex-between>a:last-child:hover {
+    color: rgb(173, 173, 173);
+
+}
+
 
 .flex-between>* {
     color: var(--font-color);
