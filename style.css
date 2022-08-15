@@ -336,9 +336,10 @@ svg {
 }
 
 .flex-between>a:hover {
-    /* text-decoration: underline; */
-    border-bottom: 1px solid white;
-    color: var(--font-color)
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    /* border-bottom: 1px solid white; */
+    color: var(--font-color);
 }
 
 .cards {
