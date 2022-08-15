@@ -49,7 +49,7 @@ body {
     grid-template-rows: repeat(12, 1fr);
     width: 100vw;*/
     grid-template-columns: 0.4fr repeat(3, 1fr);
-    grid-template-rows: 80px 1fr 2fr 70px;
+    grid-template-rows: 80px 1fr 2fr 60px;
     /* height: 100vh; */
     grid-template-areas:
         "aside head head head"
@@ -228,7 +228,7 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 47rem;
+    height: 40rem;
 }
 
 .aside_flex>* {
@@ -484,6 +484,7 @@ h2 {
     background: -o-linear-gradient(left, rgba(174, 42, 151, 1) 0%, rgba(117, 110, 208, 1) 49%, rgba(81, 154, 244, 1) 100%);
     background: -webkit-gradient(linear, left top, right top, from(rgba(174, 42, 151, 1)), color-stop(49%, rgba(117, 110, 208, 1)), to(rgba(81, 154, 244, 1)));
     background: linear-gradient(90deg, rgba(174, 42, 151, 1) 0%, rgba(117, 110, 208, 1) 49%, rgba(81, 154, 244, 1) 100%);
+    font-size: var(--fs-400);
 }
 
 .foot>* {
