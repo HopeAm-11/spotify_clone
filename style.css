@@ -10,12 +10,23 @@
     --main_bg: linear-gradient(0deg, rgba(17, 17, 17, 1) 0%, rgba(23, 23, 23, 1) 67%, rgba(61, 61, 61, 1) 100%);
     --angle_icon_bg: #161616;
     --head_s: 1rem;
+    /*front*/
+    --font-color: #fff;
+    --fs-xl: 5rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 0.80rem;
+    --ff-body: "Arial", Helvetica, sans-serif;
+
 }
 
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: white;
+    font-family: var(--ff-body);
+    font-size: var(--fs-400);
+
 }
 
 
@@ -25,6 +36,8 @@ body {
     background: -o-linear-gradient(bottom, rgba(17, 17, 17, 1) 0%, rgba(18, 18, 18, 1) 67%, rgba(30, 30, 30, 1) 88%, rgba(20, 20, 20, 1) 100%);
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(17, 17, 17, 1)), color-stop(67%, rgba(18, 18, 18, 1)), color-stop(88%, rgba(30, 30, 30, 1)), to(rgba(20, 20, 20, 1)));
     background: linear-gradient(0deg, rgba(17, 17, 17, 1) 0%, rgba(18, 18, 18, 1) 67%, rgba(30, 30, 30, 1) 88%, rgba(20, 20, 20, 1) 100%);
+
+
 }
 
 
@@ -43,6 +56,7 @@ body {
         "aside main main main"
         "aside main main main"
         "foot foot foot foot";
+
 }
 
 /* .grid_main_container>* {
@@ -114,6 +128,7 @@ body {
 
 .head_right_wrapper {
     width: 200px;
+
 }
 
 .head>* {
@@ -129,6 +144,7 @@ body {
     background-color: transparent;
     font-size: var(--head_s);
     font-weight: bold;
+    font-size: var(--fs-400);
 
 }
 
@@ -147,6 +163,8 @@ body {
     padding: 1rem 2rem;
     border-radius: 25px;
     font-weight: bold;
+    font-size: var(--fs-400);
+
 }
 
 
@@ -236,6 +254,9 @@ svg {
 
 .spotify-logo--text {
     width: 8rem;
+    /* min-width: 5rem;
+    max-width: 8rem; */
+    /* width: min(5rem, 8rem); */
 }
 
 .aside_nav_flex>* {
@@ -304,6 +325,20 @@ svg {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+
+}
+
+.flex-between>* {
+    color: var(--font-color);
+    font-size: var(--fs-500);
+    font-weight: bold;
+
+}
+
+.flex-between>a:hover {
+    /* text-decoration: underline; */
+    border-bottom: 1px solid white;
+    color: var(--font-color)
 }
 
 .cards {
@@ -399,7 +434,6 @@ h2 {
 
 .card_text {
     display: grid;
-
     height: 30%;
     width: 90%;
     -ms-flex-line-pack: distribute;
