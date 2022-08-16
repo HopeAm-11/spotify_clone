@@ -12,9 +12,36 @@
 
 <body>
     <header>
-        <img src="/images/Spotify-Logo.wine.svg" alt="">
+        <div class="header_flex">
+            <figure>
+                <img class="logo" src="/images/Spotify-Logo.wine.svg" alt="spotify logo">
+            </figure>
+            <h1>Sign up for free to start listning.</h1>
+        </div>
+        <div class="header_sign_btn header_flex">
+            <button class="header_fb_btn">sign up with facebook</button>
+            <button class="header_g_btn"> sign up with google</button>
+        </div>
     </header>
     <main>
+        <form action="#" method="get" class="form">
+
+            <div class="form-email">
+                <label for="email">What's your email? </label>
+                <input type="email" name="email" id="email" placeholder="Enter your email." required>
+            </div>
+            <div class="form-pass">
+                <label for="pass">Create a password </label>
+                <input type="password" name="pass" id="pass" placeholder="Create a password." required>
+            </div>
+            <div class="form-name">
+                <label for="name">Create a password </label>
+                <input type="text" name="name" id="name" placeholder="Enter a profile name." required>
+            </div>
+            <div class="form-example">
+                <input type="submit" value="Subscribe!">
+            </div>
+        </form>
 
     </main>
 

@@ -1,15 +1,35 @@
+:root {
+
+    /* forms paddings*/
+    --f-padding: 10px;
+}
+
+
 body {
-    /* display: grid; */
+    display: grid;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     border: 10px solid red;
     color: red;
 }
 
 main {
-    display: grid;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     border: 1px solid orange;
     height: 100vh;
 
+}
+
+.logo {
+    width: 300px;
+}
+
+input {
+    padding: var(--f-padding);
+
+    margin: 10px 0;
+}
+
+form div {
+    margin-top: 1rem;
 }
