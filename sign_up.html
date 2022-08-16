@@ -6,21 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="reset.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <div class="header_flex">
-            <figure>
+        <div class="header_flex header_top">
+            <figure class="logo_container">
                 <img class="logo" src="/images/Spotify-Logo.wine.svg" alt="spotify logo">
             </figure>
             <h1>Sign up for free to start listning.</h1>
         </div>
         <div class="header_sign_btn header_flex">
-            <button class="header_fb_btn">sign up with facebook</button>
-            <button class="header_g_btn"> sign up with google</button>
+            <button class="header_fb_btn btn"><i class="fa-brands fa-facebook"></i>
+                sign up with facebook</button>
+            <button class="header_g_btn btn"> <i class="fa-brands fa-google"></i>
+                sign up with google</button>
         </div>
     </header>
     <main>
@@ -44,6 +47,7 @@
             </div>
 
             <div>
+                <p> Whats your gender?</p>
                 <input type="radio" id="male" name="gender" value="male" checked>
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="female">
@@ -61,8 +65,20 @@
                     purposes.</label>
             </div>
             <div class="btn_center">
-                <button class="form_btn">Sign up</button>
+
+                <p><span class="terms">clicking on sign-up, you agree to Spotify's <a href="#" class="form_link">Terms
+                            and Conditions of Use</a>.</span></p>
+                <p><span class="terms">
+                        To learn more about how Spotify collects, uses, shares
+                        and protects your personal data, please
+                        see
+                        <a href="#" class="form_link"> Spotify's Privacy Policy</a>.</span></p>
+                <div class="test">
+                    <button class="form_btn">Sign up</button>
+                    <p><span class="account">Have an account? <a href="#">Log in</a>.</span></p>
+                </div>
             </div>
+
         </form>
 
     </main>

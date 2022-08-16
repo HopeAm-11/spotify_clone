@@ -1,10 +1,19 @@
 :root {
     /*colors*/
+    --btn-1-bg: #405a93;
+    --btn-1-color: #fff;
+    --btn-2-bg: #fff;
+    --btn-2-color: #535353;
     --btn-3-bg: #1ed760;
     --btn-3-color: #000;
+
     /* forms paddings*/
     --f-padding: 10px;
+    --fs-vsmall: 0.7rem;
+    /*icons/logos*/
+    --logo-s: 13rem;
 }
+
 
 
 body {
@@ -13,17 +22,101 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     border: 10px solid red;
-    color: red;
+}
+
+
+
+body>header>* {
+    /* border: 1px solid rgb(20, 136, 117); */
+
+    height: 8rem;
+
+}
+
+.header_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header_sign_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 5rem;
+
+}
+
+button {
+    cursor: pointer;
+    /* Mouse pointer on hover */
+}
+
+.btn {
+    width: 50%;
+    padding: 5px;
+    border-radius: 20px;
+    /* remove default behavior */
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    /* usual styles */
+    border: none;
+}
+
+.btn:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
+.header_g_btn {
+    background-color: var(--btn-2-bg);
+    border: 2px solid grey;
+}
+
+.header_fb_btn {
+    background-color: var(--btn-1-bg);
+    color: var(--btn-1-color);
+}
+
+.fa-brands {
+    margin-right: 0.5rem;
 }
 
 main {
     border: 1px solid orange;
-    height: 100vh;
+    height: 50rem;
+    width: 30rem;
 
 }
 
+.logo_container {}
+
 .logo {
-    width: 300px;
+    width: var(--logo-s);
+    height: 4rem;
+    border: 1px solid red;
 }
 
 input {
@@ -56,7 +149,6 @@ form div {
     -moz-appearance: none;
     appearance: none;
     -webkit-appearance: none;
-
     /* usual styles */
     padding: 10px;
     border: none;
@@ -66,21 +158,46 @@ form div {
     border-radius: 5px;
     width: 7rem;
     border-radius: 20px;
+    margin-bottom: 10px;
 
 }
 
+
 .btn_center {
-    border: 1px solid red;
     display: grid;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    text-align: center;
+    /* width: 100%; */
+
 }
+
+/*  */
 
 .form_btn:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     background-color: #27ec6c;
+
+}
+
+.terms {
+    font-size: var(--fs-vsmall);
+
+}
+
+.form_link {}
+
+.test {
+    display: grid;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.account {
+    font-size: var(--fs-vsmall);
 
 }
