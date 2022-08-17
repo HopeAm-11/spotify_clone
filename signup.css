@@ -10,8 +10,8 @@
     /* forms paddings*/
     --f-padding: 10px;
     --fs-vsmall: 0.7rem;
-    --fs-logo-title: clamp(1rem, 2.5vw, 1.5rem); 
-    --fs-form: clamp(1rem, 2.5vw, 0.7rem); 
+    --fs-logo-title: clamp(1rem, 2.5vw, 1.5rem);
+    --fs-form: .8rem;
     /*icons/logos*/
     --logo-s: 13rem;
     /*fonts*/
@@ -27,7 +27,6 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    border: 10px solid red;
 }
 
 
@@ -51,6 +50,8 @@ body>header>* {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    font-weight: bold;
+
 }
 
 .header_sign_btn {
@@ -86,6 +87,8 @@ button {
     -webkit-appearance: none;
     /* usual styles */
     border: none;
+    font-weight: bold;
+
 }
 
 .btn:hover {
@@ -108,17 +111,17 @@ button {
 .fa-brands {
     margin-right: 0.5rem;
 }
-.header_top>h1{
+
+.header_top>h1 {
     font-size: var(--fs-logo-title);
 }
+
 main {
-    border: 1px solid orange;
     height: 50rem;
     width: 30rem;
 }
 
 .logo_container {
-    border:1px solid red;
     /* width:100%; */
 
 }
@@ -127,7 +130,11 @@ main {
     width: var(--logo-s);
     /* width:clamp(100px,20%,0.5rem) */
     height: 4rem;
-    border: 1px solid red;
+}
+
+.gen,
+.regis {
+    font-size: var(--fs-form);
 }
 
 input {
@@ -153,9 +160,12 @@ input:hover {
 form div {
     margin-top: 1rem;
 }
-.form_label{
-    font-size:var(--fs-form);
+
+.form_label {
+    font-size: var(--fs-form);
+    font-weight: bold;
 }
+
 .form_btn {
 
     /* remove default behavior */
@@ -201,7 +211,6 @@ form div {
 
 }
 
-.form_link {}
 
 .test {
     display: grid;
@@ -211,6 +220,6 @@ form div {
 }
 
 .account {
-    font-size: var(--fs-vsmall);
-
+    font-size: var(--fs-form);
+    font-weight: bold;
 }
